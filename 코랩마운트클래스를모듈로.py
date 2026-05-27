@@ -39,3 +39,17 @@ from stack import stack
 s1 = stack(10)
 s1.push('aa')
 print(s1.pop())
+
+import sys
+sys.path.append('/content/drive/MyDrive/Colab Notebooks')
+from stack import stack
+def reverse_text(text):
+  l=[]
+  s1 = stack(20)
+  for i in text:
+    s1.push(i)
+  while not s1.isEmpty():
+    l.append(s1.pop())
+    print(l.pop(),end="")
+text='chahiumang'
+reverse_text(text)
