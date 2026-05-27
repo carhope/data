@@ -53,3 +53,18 @@ def reverse_text(text):
     print(l.pop(),end="")
 text='chahiumang'
 reverse_text(text)
+
+import sys
+sys.path.append('/content/drive/MyDrive/Colab Notebooks')
+from stack import stack
+def reverse_text(text):
+  l=''
+  s1 = stack(20)
+  for i in text:
+    s1.push(i)
+  while not s1.isEmpty():
+    l=l+s1.pop()
+  return l
+text='chahiumang'
+tt = reverse_text(text)
+print(tt)
